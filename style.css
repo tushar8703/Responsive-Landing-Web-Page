@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+:root {
+    --black: black;
+    --bg: black;
+    --border: 2px solid rgba(255, 255, 255, .3);
+}
+
+body {
+    background: var(--bg);
+}
+
+/* header tag */
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo img {
+    border: none;
+    border-radius: 50%;
+    height: 5rem;
+}
+.navBa{
+   display: flex;
+   position: relative;
+}
+
+.navBar a {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.header .navBar a:hover {
+    color: rgba(255, 82, 82, 0.579);
+    border-bottom: 3px solid beige;
+    padding-bottom: 3px;
+}
+
+.header .navBar.active {
+    right: 0;
+}
+
+#menu-btn span {
+    color: white;
+    padding: 2px;
+    margin: 5px;
+    font-size: 2rem;
+    display: none;
+}
+
+#menu-btn span:hover {
+    color: rgba(255, 82, 82, 0.579);
+}
+
+/* home section */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url('/img//home-bg\ 1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .home-container {
+    max-width: 60rem;
+    margin-left: 10px;
+}
+
+.home .home-container img {
+    max-width: 20rem;
+    margin-left: 25vmin;
+}
+
+.home .home-container h2 {
+    display: flex;
+    font-size: 3rem;
+    padding: 1rem;
+    color: white;
+    margin-top: 10rem;
+}
+
+.home .home-container .quote {
+    color: wheat;
+    font-size: 1.2rem;
+    padding: 3rem;
+}
+
+.quote h4 {
+    margin: 1rem;
+}
+
+/* About us Section */
+.about {
+    color: white;
+    background: url(/img/home-bg.jpg);
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.heading span {
+    color: rgb(232, 166, 44);
+    margin: 2rem;
+    text-transform: uppercase;
+}
+
+.about .row {
+    display: flex;
+    margin: 1rem;
+}
+
+.image img {
+    width: 30rem;
+    margin: 1rem;
+}
+
+.about .row .contain h1 {
+    font-size: 5vmin;
+    margin: 2rem;
+    color: red;
+}
+
+.about .row .contain p {
+    font-size: 1.3rem;
+    margin: 1rem;
+    padding: 5pxm;
+}
+
+.about .row .secContain p {
+    font-size: 1.3rem;
+    margin: 1rem;
+    padding: 5pxm;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+}
+
+/* menu section */
+.menu {
+    background: url(/img/home-bg.jpg);
+    padding-top: 3rem;
+}
+
+.menu .product-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: .5rem;
+}
+
+.product-data .product {
+    padding: 2rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.product-data .product:hover {
+    background: rgba(255, 255, 255, 0.212);
+    color: black;
+}
+
+.product-data .product:hover>* {
+    color: black;
+}
+
+.product-data .product img {
+    width: 20vw;
+    height: 40vh;
+}
+
+.productName {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.product-data .product .price {
+    padding: .5rem 0;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.price span {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    margin: 5px;
+}
+
+.product-data .product .btn {
+    background-color: orange;
+    color: white;
+    font-size: 1.5rem;
+    padding: .7rem;
+}
+
+/* contact us section */
+.contact_us {
+    padding-top: 3rem;
+}
+
+.contact_us .contactContainer {
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact_us .contactContainer .map {
+    flex: 1 1 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact_us .contactContainer form {
+    flex: 1 1 30rem;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.contact_us .contactContainer form h4 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+}
+
+.contact_us .contactContainer form h4 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+}
+
+.contact_us .contactContainer form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--black);
+    border: var(--border);
+}
+
+.contact_us .contactContainer form .inputBox span {
+    color: white;
+    font-size: 5rem;
+    padding-left: 2rem;
+}
+
+.contact_us .contactContainer form .inputBox input {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-transform: none;
+    background: none;
+    color: white;
+}
+
+.submitBtn {
+    background: orange;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImg {
+    margin: 20px;
+    margin-top: 2rem;
+}
+
+.logo img {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.link a {
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.088);
+    padding: .5rem;
+}
+
+.link.active {
+    right: 0;
+}
+
+.link a:hover {
+    background-color: white;
+    color: black;
+}

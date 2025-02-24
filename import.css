@@ -1,0 +1,137 @@
+@media screen and (max-width :1050px) {
+
+    /* about section */
+    .about .row {
+        display: inline-block;
+    }
+
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 70vw;
+
+    }
+}
+
+
+@media screen and (max-width :990px) {
+
+    /* menu section */
+    .product-data .product img {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width :850px) {
+
+    .header .navBar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: white;
+        width: 100vw;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navBar a {
+        display: block;
+        margin: 2rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        color: black;
+    }
+
+    .header .navBar a:hover {
+        color: rgb(88, 2, 2);
+        border-bottom: 2px solid rgba(1, 7, 25, 0.49);
+    }
+
+    #menu-btn span {
+        display: block;
+    }
+
+    /* home section */
+    .home {
+        background: url('/img/home-bg.jpg') no-repeat;
+    }
+}
+
+@media screen and (max-width :650px) {
+
+    /* home section */
+    .home .home-container img {
+        max-width: 15rem;
+        margin-left: 20vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .home-container h2 {
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .home .home-container .quote {
+        font-size: 1.5rem;
+        padding: 2.5rem;
+    }
+
+    /* menu */
+    .product-data .product img {
+        width: 60vw;
+        height: 50vh;
+    }
+
+    .product-data .product .price {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+
+    .price span {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width :450px) {
+
+    /* home section */
+    .home .Container img {
+        max-width: 10rem;
+        margin-left: 20vmin;
+    }
+
+    .home .Container h2 {
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .home .Container .quote {
+        color: wheat;
+        font-size: 1rem;
+        padding: 2rem;
+    }
+
+    /* menu section */
+    .product-data .product img {
+        width: 40vw;
+        height: 25vh;
+    }
+
+    /* contact us section */
+    .contact_us .contactContainer form h4 {
+        font-size: 2rem;
+    }
+
+    .link a {
+        font-size: 1rem;
+    }
+}
